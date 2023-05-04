@@ -1,0 +1,19 @@
+.login-container{
+    height: 30vh;
+    width: 20vw;
+    margin: 50px auto 0;
+    /* border: 2px solid grey; */
+    text-align: center;
+    background: silver;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 3px wheat;
+}
+.div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.div input{
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
