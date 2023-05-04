@@ -6,7 +6,7 @@ const Sign = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState({ email: "", password: "" });
   const Submithandler=()=>{
-    axios.post("http://localhost:8000/login",user).then((res)=>{
+    axios.post("https://calendar-m8yj.onrender.com/login",user).then((res)=>{
       if(res.status === 200){
         alert("login successfully");
         window.localStorage.setItem("token",res.data.token);

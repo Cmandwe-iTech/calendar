@@ -127,7 +127,7 @@ function Calendar() {
         authorization: token,
       },
     };
-    axios.get("http://localhost:8000/events", config).then((res) => {
+    axios.get("https://calendar-m8yj.onrender.com/events", config).then((res) => {
       setEvents(res.data.events);
     });
   }, [event]);
@@ -138,7 +138,7 @@ function Calendar() {
         authorization: token,
       },
     };
-   await axios.post("http://localhost:8000/events", details, config).then((res)=>{
+   await axios.post("https://calendar-m8yj.onrender.com/events", details, config).then((res)=>{
         console.log("ok");
     })
   }

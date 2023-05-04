@@ -9,7 +9,7 @@ const Signup = () => {
   const SignupHandler = () => {
     if (validate(user)) {
       axios
-        .post("http://localhost:8000/register", user)
+        .post("https://calendar-m8yj.onrender.com/register", user)
         .then((res) => {
           if (res.status === 200) {
             alert("registerd successfully");
