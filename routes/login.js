@@ -17,7 +17,8 @@ user_route.post("/register", async(req, res)=>{
         if (!err) {
           try {
             const user = await UserModel.create({
-              name:req.body.name,
+              firstName:req.body.firstName,
+              lastName:req.body.lastName,
               email: req.body.email,
               password: hash,
             });
